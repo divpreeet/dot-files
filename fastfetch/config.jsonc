@@ -1,0 +1,68 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/Users/divpreet/.config/fastfetch/pear.png",
+    "type": "iterm",
+    "height": 17,
+    "width": 30,
+    "padding": {
+      "top": 0,
+      "left": 2,
+      "right": 2
+    }
+  },
+  "colors": {
+    "1": "38;2;245;224;220",  // rosewater (#F5E0DC)
+    "2": "38;2;242;205;205",  // flamingo (#F2CDCD)
+    "3": "38;2;245;194;231",  // pink (#F5C2E7)
+    "4": "38;2;203;166;247",  // mauve (#CBA6F7)
+    "5": "38;2;243;139;168",  // red (#F38BA8)
+    "6": "38;2;231;130;132",  // maroon (#E78284)
+    "7": "38;2;250;179;135",  // peach (#FAB387)
+    "8": "38;2;249;226;175",  // yellow (#F9E2AF)
+    "9": "38;2;166;227;161"   // green (#A6E3A1)
+  },
+  "modules": [
+    // Header section
+    { "type": "title",     "keyColor": "38;2;245;224;220" },
+    { "type": "separator", "keyColor": "38;2;242;205;205" },
+
+    // System Information
+    { "type": "os",        "keyColor": "38;2;245;194;231" },
+    {
+      "type": "host",
+      "format": "{/2}{-}{/}{2}{?3} {3}{?}",
+      "keyColor": "38;2;203;166;247"
+    },
+    { "type": "kernel",    "keyColor": "38;2;243;139;168" },
+    { "type": "uptime",    "keyColor": "38;2;231;130;132" },
+
+    // Break between system info and package/shell info
+    { "type": "break",     "keyColor": "38;2;250;179;135" },
+
+    // Package and Shell Information
+    { "type": "packages",  "keyColor": "38;2;249;226;175" },
+    { "type": "shell",     "keyColor": "38;2;166;227;161" },
+    { "type": "display",   "keyColor": "38;2;245;224;220" },
+    { "type": "terminal",  "keyColor": "38;2;242;205;205" },
+
+    // Break between package info and hardware info
+    { "type": "break",     "keyColor": "38;2;245;194;231" },
+
+    // Hardware Information
+    { "type": "cpu",       "keyColor": "38;2;203;166;247" },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "keyColor": "38;2;243;139;168"
+    },
+    { "type": "memory",    "keyColor": "38;2;231;130;132" },
+
+    // Final break (optional)
+    { "type": "break",     "keyColor": "38;2;250;179;135" },
+
+    // Color Palette display (optional)
+    { "type": "colors",    "keyColor": "38;2;249;226;175" }
+  ]
+}
+
